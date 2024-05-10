@@ -1,0 +1,1 @@
+Project to track solved tasks on codewars.com
