@@ -2,6 +2,7 @@ package com.github.semouse.kuy.six.equalsidesofarray;
 
 import java.util.Arrays;
 
+
 public class Kata {
 
     public static int findEvenIndex(int[] arr) {
