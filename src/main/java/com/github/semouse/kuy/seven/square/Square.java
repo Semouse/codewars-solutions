@@ -10,15 +10,15 @@ public class Square {
     private Square() {
     }
 
-    public static boolean isSquare(int n) {
-        int i = 0;
-        while (i * i <= n) {
-            if (i * i == n) {
-                return true;
-            }
-            i++;
+    public static long findNextSquare(long sq) {
+        if(!isSquare(sq)){
+            return - 1;
         }
+        long n = (long) Math.sqrt(sq) + 1;
+        return n * n;
+    }
 
-        return false;
+    public static boolean isSquare(long n) {
+        return Math.sqrt(n) % 1 == 0;
     }
 }
